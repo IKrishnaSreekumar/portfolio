@@ -2,17 +2,20 @@
 // to add eventlistener
 let holder = document.getElementById('cardholder') ; 
 
-let width = cardholder.offsetWidth;
 
 holder.addEventListener("mouseover", movCard, false);
 holder.addEventListener("mouseout", stopCard, false);
 
+
 function movCard() {
-    holder.setAttribute("style", "background-color:blue;");
+  holder.style.animation() = "move 10s linear forwards";
+  // cardholder should move 
+    // holder.setAttribute("style", "background-color:blue;");
 }
 
 function stopCard() {
-    holder.setAttribute("style", "background-color:green;");
+  holder.style.animationPlayState = "paused" ;
+//     holder.setAttribute("style", "background-color:green;");
 }
 
 
